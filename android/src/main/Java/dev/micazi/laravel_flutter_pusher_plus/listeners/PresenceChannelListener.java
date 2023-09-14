@@ -1,4 +1,4 @@
-package com.github.olubunmitosin.laravel_flutter_pusher.listeners;
+package dev.micazi.laravel_flutter_pusher_plus.listeners;
 
 import com.pusher.client.channel.PresenceChannelEventListener;
 import com.pusher.client.channel.User;

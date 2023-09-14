@@ -1,4 +1,4 @@
-package com.github.olubunmitosin.laravel_flutter_pusher.platform_messages;
+package dev.micazi.laravel_flutter_pusher_plus.platform_messages;
 
 public class BindInstanceMessage extends InstanceMessage {
     private String eventName;

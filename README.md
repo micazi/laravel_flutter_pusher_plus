@@ -1,20 +1,26 @@
+# Laravel Flutter Pusher Plus
 
-# Laravel Flutter Pusher
+> :warning:
+> **Please Note**
+> This is a reworked updated version of the [laravel_flutter_pusher_plus](https://pub.dev/packages/laravel_flutter_pusher_plus) packag.
 
-[![pub package](https://img.shields.io/pub/v/laravel_flutter_pusher.svg)](https://pub.dartlang.org/packages/laravel_flutter_pusher)
+[![pub package](https://img.shields.io/pub/v/laravel_flutter_pusher_plus.svg)](https://pub.dartlang.org/packages/laravel_flutter_pusher_plus)
 
 An unofficial Flutter plugin that wraps [pusher-websocket-java](https://github.com/pusher/pusher-websocket-java) on Android and [pusher-websocket-swift](https://github.com/pusher/pusher-websocket-swift) on iOS.
 This is a continued plugin for [Flutter Pusher Client](https://github.com/heywhy/flutter-pusher-client)
 
 This package lets you consume events from a Pusher server. In order to use this library, you need to have a free account on <https://pusher.com>. After registering, you will need the application credentials for your app.
-**NOTE** This package requires ``json_annotation : ^4.0.0``
+**NOTE** This package requires `json_annotation : ^4.0.0`
 
 # How to install
-* Add to your pubspec.yaml
+
+- Add to your pubspec.yaml
+
 ```
 dependencies:
-  laravel_flutter_pusher: ^0.0.4
+  laravel_flutter_pusher_plus: ^[latest_version]
 ```
+
 <!-- * In `/ios/Podfile`, set global platform to at least 10.0
 `platform :ios, '10.0'`
 
@@ -36,7 +42,7 @@ This set of steps should work to fix this for your project.
 ## Getting Started
 
 ```dart
-import 'package:laravel_flutter_pusher/laravel_flutter_pusher.dart';
+import 'package:laravel_flutter_pusher_plus/laravel_flutter_pusher_plus.dart';
 
 void main() {
 
@@ -46,7 +52,7 @@ void main() {
           encrypted: false,
           cluster: 'eu'
       );
-  
+
       LaravelFlutterPusher pusher = LaravelFlutterPusher('app_key', options, enableLogging: true);
       pusher
           .subscribe('channel')
@@ -76,8 +82,9 @@ buildTypes {
 `android/app/proguard-rules.pro`:
 
 ```
--keep class com.github.olubunmitosin.laravel_flutter_pusher.** { *; }
+-keep class dev.micazi.laravel_flutter_pusher_plus.** { *; }
 ```
 
 ## Development
+
 Generate the models and the factories: `flutter packages pub run build_runner build --delete-conflicting-outputs`

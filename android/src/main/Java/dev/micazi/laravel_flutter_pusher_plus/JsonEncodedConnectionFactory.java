@@ -1,4 +1,4 @@
-package com.github.olubunmitosin.laravel_flutter_pusher;
+package dev.micazi.laravel_flutter_pusher_plus;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;

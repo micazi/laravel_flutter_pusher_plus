@@ -9,9 +9,9 @@ public class SwiftLaravelFlutterPusherPlugin: NSObject, FlutterPlugin {
     public var pusherInstanceMap = [String:PusherInstance]()
     
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "com.github.olubunmitosin/pusher", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "dev.micazi/pusher", binaryMessenger: registrar.messenger())
         let instance = SwiftLaravelFlutterPusherPlugin()
-        let eventChannel = FlutterEventChannel(name: "com.github.olubunmitosin/pusherStream", binaryMessenger: registrar.messenger())
+        let eventChannel = FlutterEventChannel(name: "dev.micazi/pusherStream", binaryMessenger: registrar.messenger())
         
         registrar.addMethodCallDelegate(instance, channel: channel)
         eventChannel.setStreamHandler(StreamHandler())

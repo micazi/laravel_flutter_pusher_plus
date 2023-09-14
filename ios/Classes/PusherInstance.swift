@@ -1,6 +1,6 @@
 //
 //  PusherInstance.swift
-//  laravel_flutter_pusher
+//  laravel_flutter_pusher_plus
 //
 //  Created by Olubunmi Tosin on 13/10/2021.
 //

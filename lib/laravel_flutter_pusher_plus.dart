@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'laravel_flutter_pusher.g.dart';
+part 'laravel_flutter_pusher_plus.g.dart';
 
 enum PusherConnectionState {
   // ignore: constant_identifier_names
@@ -63,10 +63,9 @@ class Channel {
 }
 
 class LaravelFlutterPusher {
-  static const MethodChannel _channel =
-      MethodChannel('com.github.olubunmitosin/pusher');
+  static const MethodChannel _channel = MethodChannel('dev.micazi/pusher');
   final EventChannel _eventChannel =
-      const EventChannel('com.github.olubunmitosin/pusherStream');
+      const EventChannel('dev.micazi/pusherStream');
   static int _instances = 0;
 
   int _instanceId = 0;

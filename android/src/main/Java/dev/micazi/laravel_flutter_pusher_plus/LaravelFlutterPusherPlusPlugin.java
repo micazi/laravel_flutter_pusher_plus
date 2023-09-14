@@ -1,10 +1,10 @@
-package com.github.olubunmitosin.laravel_flutter_pusher;
+package dev.micazi.laravel_flutter_pusher_plus;
 
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.github.olubunmitosin.laravel_flutter_pusher.platform_messages.InstanceMessage;
+import dev.micazi.laravel_flutter_pusher_plus.platform_messages.InstanceMessage;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
@@ -35,8 +35,8 @@ public class LaravelFlutterPusherPlugin implements FlutterPlugin, MethodCallHand
 
     @Override
     public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
-        channel = new MethodChannel(binding.getBinaryMessenger(), "com.github.olubunmitosin/pusher");
-        eventStream = new EventChannel(binding.getBinaryMessenger(), "com.github.olubunmitosin/pusherStream");
+        channel = new MethodChannel(binding.getBinaryMessenger(), "dev.micazi/pusher");
+        eventStream = new EventChannel(binding.getBinaryMessenger(), "dev.micazi/pusherStream");
 
         channel.setMethodCallHandler(new LaravelFlutterPusherPlugin());
         eventStream.setStreamHandler(new EventChannel.StreamHandler() {

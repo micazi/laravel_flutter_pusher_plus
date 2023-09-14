@@ -1,11 +1,11 @@
-package com.github.olubunmitosin.laravel_flutter_pusher;
+package dev.micazi.laravel_flutter_pusher_plus;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-import com.github.olubunmitosin.laravel_flutter_pusher.listeners.EventChannelListener;
-import com.github.olubunmitosin.laravel_flutter_pusher.listeners.PresenceChannelListener;
-import com.github.olubunmitosin.laravel_flutter_pusher.listeners.PrivateChannelListener;
+import dev.micazi.laravel_flutter_pusher_plus.listeners.EventChannelListener;
+import dev.micazi.laravel_flutter_pusher_plus.listeners.PresenceChannelListener;
+import dev.micazi.laravel_flutter_pusher_plus.listeners.PrivateChannelListener;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.pusher.client.Pusher;
@@ -27,8 +27,8 @@ import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.github.olubunmitosin.laravel_flutter_pusher.LaravelFlutterPusherPlugin.TAG;
-import static com.github.olubunmitosin.laravel_flutter_pusher.LaravelFlutterPusherPlugin.eventSink;
+import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlugin.TAG;
+import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlugin.eventSink;
 
 public class PusherInstance implements MethodChannel.MethodCallHandler {
 

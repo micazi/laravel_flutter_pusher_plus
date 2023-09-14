@@ -1,6 +1,6 @@
-# laravel_flutter_pusher_example
+# laravel_flutter_pusher_plus_example
 
-Demonstrates how to use the laravel_flutter_pusher plugin.
+Demonstrates how to use the laravel_flutter_pusher_plus plugin.
 
 ## Getting Started
 

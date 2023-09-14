@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:laravel_flutter_pusher/laravel_flutter_pusher.dart';
+import 'package:laravel_flutter_pusher_plus/laravel_flutter_pusher_plus.dart';
 
 void main() {
   runApp(const MyApp());

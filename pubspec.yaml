@@ -1,11 +1,11 @@
-name: laravel_flutter_pusher
+name: laravel_flutter_pusher_plus
 description: Pusher client that supports laravel echo in flutter projects. Supports Null satefy
-version: 0.0.4
-homepage: 'https://github.com/olubunmitosin'
+version: 1.0.0
+homepage: "https://github.com/micazi/laravel_flutter_pusher_plus"
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.20.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:
@@ -15,10 +15,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
-  json_serializable: ^4.1.0
-  build_runner: ^1.12.2
-
+  flutter_lints: ^2.0.3
+  json_serializable: ^6.7.1
+  build_runner: ^2.0.6
 
 # The following section is specific to Flutter.
 flutter:
@@ -29,7 +28,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.github.olubunmitosin.laravel_flutter_pusher
+        package: dev.micazi.laravel_flutter_pusher_plus
         pluginClass: LaravelFlutterPusherPlugin
       ios:
         pluginClass: LaravelFlutterPusherPlugin

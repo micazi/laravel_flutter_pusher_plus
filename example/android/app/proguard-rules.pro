@@ -1,1 +1,1 @@
--keep class com.github.olubunmitosin.laravel_flutter_pusher.** { *; }
+-keep class dev.micazi.laravel_flutter_pusher_plus.** { *; }

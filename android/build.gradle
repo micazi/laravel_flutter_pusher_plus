@@ -1,4 +1,4 @@
-group 'com.github.olubunmitosin.laravel_flutter_pusher'
+group 'dev.micazi.laravel_flutter_pusher_plus'
 version '1.0-SNAPSHOT'
 
 buildscript {

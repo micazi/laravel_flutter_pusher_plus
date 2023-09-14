@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'laravel_flutter_pusher.dart';
+part of 'laravel_flutter_pusher_plus.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
@@ -109,9 +109,9 @@ Map<String, dynamic> _$PusherEventStreamMessageToJson(
 
 Event _$EventFromJson(Map<String, dynamic> json) {
   return Event(
-    channel: json['channel'] as String,
-    event: json['event'] as String,
-    data: json['data'] as String,
+    channel: json['channel'] as String? ?? '',
+    event: json['event'] as String? ?? '',
+    data: json['data'] as String? ?? '',
   );
 }
 
@@ -124,8 +124,8 @@ Map<String, dynamic> _$EventToJson(Event instance) => <String, dynamic>{
 ConnectionStateChange _$ConnectionStateChangeFromJson(
     Map<String, dynamic> json) {
   return ConnectionStateChange(
-    currentState: json['currentState'] as String,
-    previousState: json['previousState'] as String,
+    currentState: json['currentState'] as String? ?? '',
+    previousState: json['previousState'] as String? ?? '',
   );
 }
 
@@ -138,9 +138,9 @@ Map<String, dynamic> _$ConnectionStateChangeToJson(
 
 ConnectionError _$ConnectionErrorFromJson(Map<String, dynamic> json) {
   return ConnectionError(
-    message: json['message'] as String,
-    code: json['code'] as String,
-    exception: json['exception'] as String,
+    message: json['message'] as String? ?? '',
+    code: json['code'] as String? ?? '',
+    exception: json['exception'] as String? ?? '',
   );
 }
 
