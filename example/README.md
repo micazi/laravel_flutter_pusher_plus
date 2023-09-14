@@ -2,15 +2,21 @@
 
 Demonstrates how to use the laravel_flutter_pusher_plus plugin.
 
-## Getting Started
+```dart
+import 'package:laravel_flutter_pusher_plus/laravel_flutter_pusher_plus.dart';
 
-This project is a starting point for a Flutter application.
+void main() {
 
-A few resources to get you started if this is your first Flutter project:
+  var options = PusherOptions(
+          host: '10.0.2.2',
+          port: 6001,
+          encrypted: false,
+          cluster: 'eu'
+      );
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+      LaravelFlutterPusher pusher = LaravelFlutterPusher('app_key', options, enableLogging: true);
+      pusher
+          .subscribe('channel')
+          .bind('event', (event) => log('event =>' + event.toString()));
+}
+```

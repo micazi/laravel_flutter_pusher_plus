@@ -1,1 +1,0 @@
--keep class dev.micazi.laravel_flutter_pusher_plus.** { *; }
