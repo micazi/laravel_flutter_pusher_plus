@@ -1,4 +1,4 @@
-#import "LaravelFlutterPusherPlugin.h"
+#import "LaravelFlutterPusherPlusPlugin.h"
 #if __has_include(<laravel_flutter_pusher_plus/laravel_flutter_pusher_plus-Swift.h>)
 #import <laravel_flutter_pusher_plus/laravel_flutter_pusher_plus-Swift.h>
 #else
@@ -8,7 +8,7 @@
 #import "laravel_flutter_pusher_plus-Swift.h"
 #endif
 
-@implementation LaravelFlutterPusherPlugin
+@implementation LaravelFlutterPusherPlusPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   [SwiftLaravelFlutterPusherPlugin registerWithRegistrar:registrar];
 }

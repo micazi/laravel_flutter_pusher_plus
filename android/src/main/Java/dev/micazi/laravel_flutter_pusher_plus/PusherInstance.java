@@ -27,8 +27,8 @@ import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Map;
 
-import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlugin.TAG;
-import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlugin.eventSink;
+import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlusPlugin.TAG;
+import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlusPlugin.eventSink;
 
 public class PusherInstance implements MethodChannel.MethodCallHandler {
 

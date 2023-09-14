@@ -12,8 +12,8 @@ import java.util.Map;
 
 import org.json.JSONObject;
 
-import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlugin.TAG;
-import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlugin.eventSink;
+import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlusPlugin.TAG;
+import static dev.micazi.laravel_flutter_pusher_plus.LaravelFlutterPusherPlusPlugin.eventSink;
 
 public class EventChannelListener implements ChannelEventListener {
     static final String SUBSCRIPTION_SUCCESS_EVENT = "pusher:subscription_succeeded";

@@ -1,4 +1,4 @@
 #import <Flutter/Flutter.h>
 
-@interface LaravelFlutterPusherPlugin : NSObject<FlutterPlugin>
+@interface LaravelFlutterPusherPlusPlugin : NSObject<FlutterPlugin>
 @end

@@ -19,9 +19,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * LaravelFlutterPusherPlugin
+ * LaravelFlutterPusherPlusPlugin
  */
-public class LaravelFlutterPusherPlugin implements FlutterPlugin, MethodCallHandler {
+public class LaravelFlutterPusherPlusPlugin implements FlutterPlugin, MethodCallHandler {
 
     public static String TAG = "FlutterPusherPlugin";
     public static EventChannel.EventSink eventSink;
@@ -29,7 +29,7 @@ public class LaravelFlutterPusherPlugin implements FlutterPlugin, MethodCallHand
     MethodChannel channel;
     EventChannel eventStream;
 
-    public LaravelFlutterPusherPlugin() {
+    public LaravelFlutterPusherPlusPlugin() {
     }
 
 
@@ -38,11 +38,11 @@ public class LaravelFlutterPusherPlugin implements FlutterPlugin, MethodCallHand
         channel = new MethodChannel(binding.getBinaryMessenger(), "dev.micazi/pusher");
         eventStream = new EventChannel(binding.getBinaryMessenger(), "dev.micazi/pusherStream");
 
-        channel.setMethodCallHandler(new LaravelFlutterPusherPlugin());
+        channel.setMethodCallHandler(new LaravelFlutterPusherPlusPlugin());
         eventStream.setStreamHandler(new EventChannel.StreamHandler() {
             @Override
             public void onListen(Object args, final EventChannel.EventSink eventSink) {
-                LaravelFlutterPusherPlugin.eventSink = eventSink;
+                LaravelFlutterPusherPlusPlugin.eventSink = eventSink;
             }
 
             @Override

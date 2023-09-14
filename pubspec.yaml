@@ -29,6 +29,6 @@ flutter:
     platforms:
       android:
         package: dev.micazi.laravel_flutter_pusher_plus
-        pluginClass: LaravelFlutterPusherPlugin
+        pluginClass: LaravelFlutterPusherPlusPlugin
       ios:
-        pluginClass: LaravelFlutterPusherPlugin
+        pluginClass: LaravelFlutterPusherPlusPlugin
