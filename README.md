@@ -2,7 +2,7 @@
 
 > :warning:
 > **Please Note**
-> This is a reworked updated version of the [laravel_flutter_pusher_plus](https://pub.dev/packages/laravel_flutter_pusher_plus) packag.
+> This is a reworked updated version of the [laravel_flutter_pusher](https://pub.dev/packages/laravel_flutter_pusher) packag.
 
 [![pub package](https://img.shields.io/pub/v/laravel_flutter_pusher_plus.svg)](https://pub.dartlang.org/packages/laravel_flutter_pusher_plus)
 
