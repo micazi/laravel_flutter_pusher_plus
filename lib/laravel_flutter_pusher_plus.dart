@@ -2,23 +2,23 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+
 import 'package:json_annotation/json_annotation.dart';
 
 part 'laravel_flutter_pusher_plus.g.dart';
 
 enum PusherConnectionState {
-  // ignore: constant_identifier_names
-  CONNECTING,
-  // ignore: constant_identifier_names
-  CONNECTED,
-  // ignore: constant_identifier_names
-  DISCONNECTING,
-  // ignore: constant_identifier_names
-  DISCONNECTED,
-  // ignore: constant_identifier_names
-  RECONNECTING,
-  // ignore: constant_identifier_names
-  RECONNECTING_WHEN_NETWORK_BECOMES_REACHABLE
+  connecting,
+
+  connected,
+
+  disconnecting,
+
+  disconnected,
+
+  reconnecting,
+
+  reconnectingWhenNetworkBecomesReachable,
 }
 
 class Channel {
