@@ -5,3 +5,6 @@
 .pub/
 .idea
 build/
+
+# FVM Version Cache
+.fvm/
